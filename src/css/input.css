@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Cairo', sans-serif;
+}
+
+.theme-container {
+    @apply px-5 mx-auto;
+}
+
+.well {
+	position: relative;
+	overflow: hidden;
+	transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+}
