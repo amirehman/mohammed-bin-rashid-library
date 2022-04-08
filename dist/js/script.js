@@ -45,7 +45,7 @@ gsap.timeline({
 .fromTo('#hamza1', { y: 0 }, { y: -100 }, 0)
 .fromTo('#birds', { y: 0 }, { y: -300 }, 0)
 .fromTo('#slide1', { y: 0 }, { y: -250 }, 0)
-.fromTo('#title1', { y: -50 }, { y: 200 }, 0)
+.fromTo('#title1', { y: 0 }, { y: 200 }, 0)
 // slide 2
 .fromTo('#hamza2', { y: 0, scale: 1 }, { y: -100, scale: 1.5 }, 0)
 .fromTo('#mountain', { y: 0 }, { y: 100 }, 0)
