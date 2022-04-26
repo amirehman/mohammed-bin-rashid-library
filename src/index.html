@@ -7,170 +7,48 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <link href="../dist/output.css" rel="stylesheet">
 
 </head>
 <body>
 
-<div class="site-wrapper">
+<div class="site-wrapper md:w-[600px] md:mx-auto flex items-center justify-center">
 
+    <hr class="top-bar w-full h-1 bg-theme-orange block fixed top-0 left-0">
 
-
-    <div class="nabar-wrapper bg-white py-5 fixed left-0 top-0 w-full z-10">
-        <div class="flex w-full justify-between items-center theme-container">
-
-            <div class="logo">
-                <img src="./images/logo.png" alt="logo" class="w-24">
+    <div class="animated-logo-site-wrapper h-screen w-ful">
+        <div class="animated-logo animated-logo-center animate__animated fixed">
+            <div class="log-1 absolute right-0 top-0">
+                <img src="./images/log-1.svg" alt="logo">
+                <div class="log1-layer absolute top-0 right-0 bg-white h-full"></div>
+            </div>
+            <div class="text-logo">
+                <img src="./images/log-2.svg" alt="logo" class="log-2 block">
+                <img src="./images/log-3.svg" alt="logo" class="log-3 block">
+                <img src="./images/log-4.svg" alt="logo" class="log-4 block mt-1">
+                <div class="log2-layer absolute left-0 top-0 bg-white w-full"></div>
+                <div class="log3-layer absolute left-0 bg-white w-full"></div>
+                <div class="log4-layer absolute right-0 bg-white w-full"></div>
             </div>
 
-            <nav class="navbar">
-                <ul class="flex items-center text-[9px] space-x-3 text-gray-800">
-                    <li>
-                        <a href="#section1" class="ml-3 relative">
-                            <span> مقدمة </span>
-                            <span class="menu1 w-10 h-2 bg-theme-orange inline-block absolute top-[100%] right-0"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#section2" class="ml-3 relative">
-                            <span> الأهداف </span>
-                            <span class="menu2 w-10 h-2 bg-theme-dark-yellow inline-block absolute top-[100%] right-0"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#section3" class="ml-3 relative">
-                            <span> الأقسام </span>
-                            <span class="menu3 w-10 h-2 bg-theme-teal inline-block absolute top-[100%] right-0"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#section4" class="ml-3 relative">
-                            <span> المرافق </span>
-                            <span class="menu4 w-10 h-2 bg-theme-purple inline-block absolute top-[100%] right-0"></span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- navbar -->
         </div>
     </div>
-    <!-- navbar -->
 
-    <div class="well main" id="well">
-
-    <section id="section1" class="panel section section-one bg-theme-orange h-screen relative">
-
-        <div class="white-bar absolute left-12 h-full w-14 bg-white flex items-center justify-center">
-            <img src="./images/title-1.png" alt="title" id="title1" class="top absolute right-4 bottom-[170px] w-6">
-        </div>
-        <!-- white bar -->
-
-        <div class="clouds w-full absolute top-32 left-0">
-            <img src="./images/clouds.png" alt="clouds" class="w-full opacity-50">
-        </div>
-        <!-- clouds -->
-
-        <div class="slide w-full absolute top-32 left-0">
-            <img src="./images/slide-1-color.png" id="slide1" alt="slide 1" class="w-full">
-            <img src="./images/hamza-1.png" alt="hamza 1" id="hamza1" class="w-32 absolute top-[80%] right-0">
-            <img src="./images/birds.png" alt="birds" id="birds" class="w-32 absolute top-[10%] right-10">
-        </div>
-        <!-- clouds -->
-
-        <div class="paragraph absolute right-10 bottom-[120px] w-1/2 text-[9px] text-white">
-            <p>بُنيت مكتبتنا المطلة على خور دبي، على شكل رحل، وهو المسند الخشبي المستخدم لحمل الكتب وخاصة نسخ القرآن الكريم. ويتكون مبنى المكتبة من سبعة طوابق، وهي موطن المبادرة الثقافية الأكثر طموحاً في دبي حتى الآن؛ والتي تهدف إلى إنشاء منارة للمعرفة والثقافة والإبداع، من خلال الحصول على ملايين الكتب من جميع أنحاء العالم.</p>
-        </div>
-    </section>
-    <!-- section one -->
-
-
-    <section id="section2" class="panel section section-two bg-theme-dark-yellow h-screen relative">
-
-        <div class="white-bar absolute left-12 h-full w-14 bg-white flex items-center justify-center">
-            <img src="./images/title-2.png" alt="title" id="title2" class="top absolute right-4 top-[220px] w-6">
-        </div>
-        <!-- white bar -->
-
-        <div class="absolute top-[120px] right-10">
-            <img src="./images/hamza-2.png" alt="hamza 2" id="hamza2" class="w-32">
-        </div>
-        <!-- hamza -->
-
-        <div class="clouds w-full absolute bottom-32 left-0">
-            <img src="./images/mountains.png" alt="clouds" id="mountain" class="w-full opacity-50">
-        </div>
-        <!-- clouds -->
-
-        <div class="slide w-full absolute bottom-0 left-0">
-            <img src="./images/slide-2.png" alt="slide 2" id="slide2" class="w-full">
-        </div>
-        <!-- clouds -->
-
-        <div class="paragraph absolute right-10 top-[350px] w-1/2 text-[9px] text-white space-y-3">
-            <p> أسست المكتبة في إطار رؤية صاحب السمو الشيخ محمد بن راشد آل مكتوم، لتطوير مجتمع المعرفة في إمارة دبي والإمارات العربية المتحدة ككل. </p>
-
-            <p>إن الهدف الأسمى لمكتبتنا، يكمن في تحفيز الشغف بالمعرفة، فنحن ندعم ونشجع القراءة والبحث والإبداع وريادة الأعمال، من خلال توفير الوصول المجاني إلى مجموعة متميزة من الكتب، وغيرها من الموارد المعرفية، بالإضافة إلى تقديم خدمات معلوماتية عالية الجودة وإطلاق فعاليات ثقافية مميزة.</p>
-        </div>
-    </section>
-    <!-- section two -->
-
-
-    <section id="section3" class="panel section section-three bg-theme-teal h-screen relative">
-
-        <div class="white-bar absolute left-12 h-full w-14 bg-white flex items-center justify-center">
-            <img src="./images/title-3.png" alt="title" id="title3" class="top absolute right-3 bottom-[220px] w-6">
-        </div>
-        <!-- white bar -->
-
-        <div class="clouds w-full absolute top-0 left-0">
-            <img src="./images/clouds.png" alt="clouds" id="clouds" class="w-full">
-        </div>
-        <!-- clouds -->
-
-        <div class="slide w-full absolute top-0 left-0">
-            <div class="overflow-hidden">
-                <img src="./images/slide-3.png" alt="slide 1" id="slide3" class="w-full">
-            </div>
-            <img src="./images/hamza-3.png" alt="hamza 3" id="hamza3" class="w-32 absolute top-[80%] right-10">
-        </div>
-        <!-- clouds -->
-
-        <div class="paragraph absolute right-10 bottom-[120px] w-1/2 text-[9px] text-white space-y-3" id="paragraph">
-            <p> تتكون مكتبة محمد بن راشد من عشر مجموعات رئيسية للمكتبة:  </p>
-            <p> المكتبة العامة، ومكتبة الشباب، ومكتبة الطفل، ومركز المعلومات، ومكتبة الخرائط والأطالس، ومكتبة الفنون والإعلام، ومكتبة الأعمال، ومكتبة الإمارات، ومكتبة الدوريات، ومكتبة المجموعات الخاصة، بالإضافة إلى الكتب الورقية، توفر مكتبتنا إمكانية الوصول إلى مجموعة واسعة من الكتب الإلكترونية وغيرها من الوسائط الرقمية. </p>
-        </div>
-    </section>
-    <!-- section three -->
-
-
-    <section id="section4" class="panel section section-four bg-theme-purple h-screen relative">
-
-
-        <div class="absolute top-[120px] right-10">
-            <img src="./images/hamza-4.png" alt="hamza 4" id="hamza4" class="w-32">
-        </div>
-        <!-- hamza -->
-
-        <div class="slide w-full absolute bottom-0 right-0">
-            <img src="./images/slide-4-color.jpg" alt="slide 2" id="slide4" class="w-full">
-        </div>
-        <!-- clouds -->
-
-        <div class="white-bar absolute left-12 h-full w-14 bg-white flex items-center justify-center">
-            <img src="./images/title-4.png" alt="title" id="title4" class="top absolute right-4 bottom-[120px] w-6">
-        </div>
-        <!-- white bar -->
-
-
-        <div class="paragraph absolute right-10 top-[370px] w-1/2 text-[9px] text-white space-y-3" id="paragraph">
-            <p> نعتمد على مجموعة واسعة من المرافق لمساعدتك في الاستمتاع بمكتبتنا. مكتبة محمد بن راشد، أحد أحدث المكتبات في العالم، والتي تم تجهيزها بمجموعة واسعة من المرافق والميزات والخدمات التي تساعدك على الاستفادة القصوى عند زيارتك.
-            </p>
-        </div>
-    </section>
-    <!-- section four -->
-
+    <div class="lang-buttons flex items-center justify-center text-white animate__animated opacity-0">
+        <a href="startup-message.html" class="bg-theme-orange w-32 flex items-center justify-center py-2">اللغة العربية</a>
+        <span class="w-2 block"></span>
+        <a href="startup-message.html" class="bg-theme-orange w-32 flex items-center justify-center py-2">English</a>
     </div>
 
+    <div class="big-hamza absolute left-5 bottom-12">
+        <svg xmlns="http://www.w3.org/2000/svg" class="fill-current w-48 bighamza" viewBox="0 0 202.76 288.61"><g data-name="Layer 2"><path d="M134.82 148.21c-22 0-40.18-4.74-54.09-14.17-13-8.4-19.14-18.56-19.14-32 0-12.93 5.11-23 15.43-30.23C87.87 63.32 102.24 59 119.73 59a130.23 130.23 0 0 1 19.07 1.7l6.85 1V2.17l-5.35-.55c-9.58-1-17.41-1.5-22.66-1.5-35.2 0-63.89 9.45-85.22 28.07C11.29 46.54.12 71.89.12 101.52c0 43.75 22.92 74.74 68.18 92.23a289.37 289.37 0 0 0-25.3 18.4c-15 12.32-26.53 22.3-35.24 30.5l-4.44 4.19 40.93 41.6 4.2-3.43c21.17-17.21 38.23-31 49.26-38.9a306.63 306.63 0 0 1 41.52-25.63 301.42 301.42 0 0 1 63.44-24.77v-60.37l-2.08.55c-32.37 8.53-52.64 12.32-65.74 12.32" style="fill:none;stroke:#e24e16;stroke-miterlimit:10;stroke-width:.25px" data-name="Layer 1"/></g></svg>
+    </div>
+
+    <div class="fixed w-full bottom-16 left-0 text-xl text-center">
+        <a href="https://mbrl.ae" class="text-theme-orange">mbrl.ae</a>
+    </div>
 
 
 </div>
@@ -178,10 +56,10 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- <script src="../dist/js/page.js"></script> -->
 <script src="../dist/js/gsap.min.js"></script>
+<script src="../dist/js/jquery.drawsvg.js"></script>
 <script src="../dist/js/ScrollToPlugin.min.js"></script>
 <script src="../dist/js/ScrollTrigger.min.js"></script>
-<script src="../dist/js/script.js"></script>
+<script src="../dist/js/index.js"></script>
 </body>
 </html>

@@ -10,8 +10,80 @@ body {
     @apply px-5 mx-auto;
 }
 
+.navbar ul li::after {
+	content: "|";
+	display: inline-block;
+	margin-left: 0.7rem;
+	margin-right: 0.7rem;
+}
+
+.navbar ul li:last-child::after {
+	display: none;
+}
+
 .well {
 	position: relative;
 	overflow: hidden;
 	transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+.animated-logo {
+	transition: 0.6s;
+}
+
+.animated-logo-center {
+	@apply top-[45%] right-[25%] h-28 w-[190px];
+}
+
+.animated-logo-center .log-1 {
+	@apply w-[35px];
+}
+
+.animated-logo-center .text-logo {
+	@apply w-36 absolute left-0 top-10;
+}
+
+.animated-logo-center .log-2 {
+	@apply w-20;
+}
+.animated-logo-center .log1-layer {
+	@apply w-10;
+}
+.animated-logo-center .log2-layer {
+	@apply h-[18px];
+}
+.animated-logo-center .log3-layer {
+	@apply top-[18px] h-[22px];
+}
+.animated-logo-center .log4-layer {
+	@apply top-[40px] h-[18px];
+}
+
+
+.animated-logo-top {
+	@apply top-[10px] right-[10px] h-[77px] w-[150px];
+}
+
+.animated-logo-top .log-1 {
+	@apply w-[24px];
+}
+
+.animated-logo-top .text-logo {
+	@apply w-[112px] absolute left-0 top-5;
+}
+
+.animated-logo-top .log-2 {
+	@apply w-16;
+}
+.animated-logo-top .log1-layer {
+	@apply w-6;
+}
+.animated-logo-top .log2-layer {
+	@apply h-[14px];
+}
+.animated-logo-top .log3-layer {
+	@apply top-[14px] h-[18px];
+}
+.animated-logo-top .log4-layer {
+	@apply top-[30px] h-[14px];
 }
