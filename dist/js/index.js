@@ -9,7 +9,7 @@ logoTimeline
     .to('.log3-layer', 1, { width: 0, ease: "linear" }, 'one+=0.8')
     .to('.log4-layer', 1, { width: 0, ease: "linear", onComplete: onCompleteLogoAnimation }, 'one+=0.9')
     .to('.animated-logo', 1, { onComplete: moveLogoToTop }, 'two+=0.5')
-    .to('.animated-logo', 1, { onComplete: showLangButtons }, 'two+=0.6')
+    .to('.animated-logo', 1, { onComplete: showLangButtons }, 'two+=0.5')
 
  function  onCompleteLogoAnimation () {
     $animatedLogo.addClass('animate__pulse');

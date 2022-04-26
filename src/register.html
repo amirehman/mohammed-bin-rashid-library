@@ -1,0 +1,212 @@
+<!doctype html>
+<html dir="rtl">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href="../dist/output.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+</head>
+<body>
+
+<div class="site-wrapper md:w-[600px] md:mx-auto">
+
+    <div class="nabar-wrapper bg-white py-5 fixed left-0 top-0 w-full z-10 ">
+        <div class="w-full theme-container">
+
+            <div class="flex items-center justify-between">
+
+                <div class="logo w-w-24">
+                    <a href="home.html">
+                        <img src="./images/logo.svg" alt="logo" class="fill-current w-24">
+                    </a>
+                </div>
+
+                <div class="lang-nav">
+                    <ul class="flex items-center justify-center text-[9px]">
+                        <li class="lang-nav-link">
+                            <a href="register.html" class="block"> التسجيل </a>
+                        </li>
+                        <li class="lang-nav-link mx-2">
+                            <a class="block">|</a>
+                        </li>
+                        <li class="lang-nav-link">
+                            <a href="#" class="block">EN</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- logo wrapper -->
+
+
+
+        </div>
+    </div>
+    <!-- navbar -->
+
+    <div class="well main" id="well">
+
+
+        <section class="panel section h-auto relative">
+
+
+            <div class="w-3/4 mx-auto mb-36">
+
+                <div class="choose-plan mt-64 flex items-center justify-between ">
+                    <div onclick="choosePlan('single')" class="plan w-full h-72 bg-theme-orange text-center py-5 text-white relative">
+                        <div class="img">
+                            <img src="./images/person.svg" alt="person icon" class="w-1/2 mx-auto">
+                        </div>
+                        <div class="text-base my-3"> باقة فردية  </div>
+                        <div class="text-2xl">150 دإ</div>
+
+
+                        <div class="absolute bottom-4 left-0 w-full">
+                            <button class="bg-white text-theme-orange text-sm px-7 py-1"> أختار </button>
+                        </div>
+
+                    </div>
+                    <!-- plan -->
+
+                    <div class="w-10"></div>
+
+                    <div onclick="choosePlan('family')" class="plan w-full h-72 bg-theme-orange text-center py-5 text-white relative">
+                        <div class="img">
+                            <img src="./images/family.svg" alt="family icon" class="w-2/3 mx-auto">
+                        </div>
+                        <div class="text-base my-3">  باقة عائلية </div>
+                        <div class="text-2xl">500 دإ</div>
+
+                        <ul class="text-[9px] px-2 my-3">
+                            <li>اضف حتى 5 أفراد من عائلتك</li>
+                        </ul>
+
+                        <div class="absolute bottom-4 left-0 w-full">
+                            <button class="bg-white text-theme-orange text-sm px-7 py-1"> أختار </button>
+                        </div>
+
+                    </div>
+                    <!-- plan -->
+                </div>
+                <!-- choose plan -->
+
+                <div class="registratin-form mt-40 hidden">
+
+                    <h1 class="text-theme-orange">لقد قمت باختيار الباقة العائلية</h1>
+
+                    <div class="form mt-10 space-y-4">
+
+                        <div class="form-element flex items-center">
+                            <div class="w-24 text-xs"> :الأسم</div>
+                            <div class="w-full">
+                                <input type="text" class="input-field">
+                            </div>
+                        </div>
+
+                        <div class="form-element flex items-center">
+                            <div class="w-24 text-xs"> :الايميل</div>
+                            <div class="w-full">
+                                <input type="text" class="input-field">
+                            </div>
+                        </div>
+
+                        <div class="form-element flex items-center">
+                            <div class="w-24 text-xs"> :الموبايل</div>
+                            <div class="w-full">
+                                <input type="text" class="input-field">
+                            </div>
+                        </div>
+
+                        <div class="form-element flex items-center">
+                            <div class="w-24 text-xs"> :رقم الهواية </div>
+                            <div class="w-full">
+                                <input type="text" class="input-field">
+                            </div>
+                        </div>
+
+                        <div class="form-element flex items-center">
+                            <div class="w-24 text-xs"> :أفراد العائلة </div>
+                            <div class="w-full">
+                                <input type="text" class="input-field">
+                            </div>
+                        </div>
+
+                        <div class="form-element flex items-start">
+                            <div class="w-24 text-xs"> :التوقيع </div>
+                            <div class="w-full">
+                                <textarea name="" id="" cols="30" rows="5" class="p-2 border input-field"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-element flex items-center">
+                            <div class="w-10 text-xs">
+                                <input type="checkbox" name="" id="">
+                            </div>
+                            <div class="w-full">
+                                <p class="text-[8px]">
+                                    ارغب في تلقي الإعلانات التسويقية أو الرسائل الإخبارية الخاصة بمكتبة البريد الإلكتروني
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="form-element flex items-center">
+                            <div class="w-32 text-xs">
+                                <p>المجموع الكلي:</p>
+                            </div>
+                            <div class="w-full text-xs">
+                                <div>150 دإ</div>
+                            </div>
+                        </div>
+
+                        <div class="form-element flex items-center">
+                            <div class="w-full text-xs text-center mt-5">
+                                <input type="submit" value=" الدفــــع " class="px-10 py-2 bg-theme-orange text-gray-100">
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+        <div class="big-hamza fixed left-5 bottom-12">
+            <svg xmlns="http://www.w3.org/2000/svg" class="fill-current w-48 bighamza" viewBox="0 0 202.76 288.61"><g data-name="Layer 2"><path d="M134.82 148.21c-22 0-40.18-4.74-54.09-14.17-13-8.4-19.14-18.56-19.14-32 0-12.93 5.11-23 15.43-30.23C87.87 63.32 102.24 59 119.73 59a130.23 130.23 0 0 1 19.07 1.7l6.85 1V2.17l-5.35-.55c-9.58-1-17.41-1.5-22.66-1.5-35.2 0-63.89 9.45-85.22 28.07C11.29 46.54.12 71.89.12 101.52c0 43.75 22.92 74.74 68.18 92.23a289.37 289.37 0 0 0-25.3 18.4c-15 12.32-26.53 22.3-35.24 30.5l-4.44 4.19 40.93 41.6 4.2-3.43c21.17-17.21 38.23-31 49.26-38.9a306.63 306.63 0 0 1 41.52-25.63 301.42 301.42 0 0 1 63.44-24.77v-60.37l-2.08.55c-32.37 8.53-52.64 12.32-65.74 12.32" style="fill:none;stroke:#e24e16;stroke-miterlimit:10;stroke-width:.25px" data-name="Layer 1"/></g></svg>
+        </div>
+
+        <div class="fixed w-full bottom-16 left-0 text-base text-center">
+            <a href="https://mbrl.ae" class="text-theme-orange">mbrl.ae</a>
+        </div>
+
+
+
+        </section>
+        <!-- section four -->
+
+    </div>
+
+
+
+</div>
+<!-- site-wrapper -->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../dist/js/gsap.min.js"></script>
+<script src="../dist/js/jquery.drawsvg.js"></script>
+<script src="../dist/js/ScrollToPlugin.min.js"></script>
+<script src="../dist/js/ScrollTrigger.min.js"></script>
+<script src="../dist/js/ScrollTrigger.min.js"></script>
+<script src="../dist/js/register.js"></script>
+</body>
+</html>

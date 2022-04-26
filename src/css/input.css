@@ -27,8 +27,8 @@ body {
 	transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
 }
 
-.animated-logo {
-	transition: 0.6s;
+.animated-logo, .lang-buttons {
+	transition: 0.3s;
 }
 
 .animated-logo-center {
@@ -86,4 +86,8 @@ body {
 }
 .animated-logo-top .log4-layer {
 	@apply top-[30px] h-[14px];
+}
+
+.input-field {
+	@apply w-full border-b border-theme-orange text-sm focus:outline-none active:outline-none;
 }

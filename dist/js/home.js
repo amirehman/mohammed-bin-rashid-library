@@ -24,6 +24,12 @@ $text4 = $('.text4').drawsvg({
         count != 0 ? sectionFourAnimateEarly() : ''
     }
 }),
+$text5 = $('.text5').drawsvg({
+    duration: 5000,
+    callback: function() {
+        count != 0 ? sectionFourAnimateDelay() : ''
+    }
+}),
 $hamza1 = $('.hamza1').drawsvg({
     duration: 1500,
     callback: function() {
@@ -72,10 +78,31 @@ function sectionThreeAnimateDelay() {
 
 function sectionFourAnimateEarly() {
     $text4.drawsvg('animate');
+
+    gsap.fromTo(".singleicon",
+    0.7,
+    {
+        opacity: 0,
+        scale: 0.97,
+        x: 10,
+        y: 15,
+    },
+    {
+        opacity: 1,
+        scale: 0.97,
+        x: 0,
+        y: 0,
+        stagger: 0.1
+    },
+  );
 }
 
 function sectionFourAnimateDelay() {
     $hamza4.drawsvg('animate');
+    $text5.drawsvg('animate');
+
+
+
 }
 
 ScrollTrigger.create({
@@ -152,3 +179,34 @@ ScrollReveal({ reset: true }).reveal('.paratext2', ScrollRevealOptions);
 ScrollReveal({ reset: true }).reveal('.paratext3', ScrollRevealOptions);
 ScrollReveal({ reset: true }).reveal('.paratext4', { scale: 0.97, delay: 500, distance: '10px', easing: 'ease-in-out' });
 ScrollReveal({ reset: true }).reveal('.paratext5', ScrollRevealOptions);
+
+
+// Menu Reveal Animation
+gsap.fromTo(".nav-link",
+    0.7,
+    {
+        opacity: 0,
+        scale: 0.97, x: 15,
+    },
+    {
+        opacity: 1,
+        scale: 0.97, x: 0,
+        stagger: 0.1
+    },
+  );
+
+
+
+gsap.timeline({
+    scrollTrigger:{
+        trigger:'.well',
+        start:'top top',
+        end:'bottom bottom',
+        scrub:1
+    }
+})
+
+.fromTo('.image1front', { y: 0 }, { y: 50 })
+.fromTo('.image2front', { y: 0 }, { y: 50 })
+.fromTo('.image3front', { y: 150 }, { y: 0 })
+.fromTo('.image4front', { y: 150 }, { y: 0 })
