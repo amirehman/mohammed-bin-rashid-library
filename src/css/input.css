@@ -32,7 +32,7 @@ body {
 }
 
 .animated-logo-center {
-	@apply top-[45%] right-[25%] h-28 w-[190px];
+	@apply top-[40%] right-[25%] h-28 w-[190px];
 }
 
 .animated-logo-center .log-1 {

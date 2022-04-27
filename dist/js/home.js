@@ -99,11 +99,32 @@ function sectionFourAnimateEarly() {
 
 function sectionFourAnimateDelay() {
     $hamza4.drawsvg('animate');
+}
+
+
+
+function socialFooterAnimateEarly() {
+    console.log('here')
     $text5.drawsvg('animate');
 
-
-
+    gsap.fromTo(".sociallink",
+    0.7,
+    {
+        opacity: 0,
+        y: 10,
+        x: 10,
+        scale: 0.97, x: 15,
+    },
+    {
+        opacity: 1,
+        y: 0,
+        x: 0,
+        scale: 0.97, x: 0,
+        stagger: 0.2
+    },
+  );
 }
+
 
 ScrollTrigger.create({
     trigger: ".section-one",
@@ -162,6 +183,14 @@ ScrollTrigger.create({
 });
 
 
+ScrollTrigger.create({
+    trigger: ".social-footer",
+    start:'top 70%',
+    end:'bottom end',
+    onEnter: () => socialFooterAnimateEarly(),
+});
+
+
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
 
@@ -195,8 +224,6 @@ gsap.fromTo(".nav-link",
     },
   );
 
-
-
 gsap.timeline({
     scrollTrigger:{
         trigger:'.well',
@@ -208,5 +235,5 @@ gsap.timeline({
 
 .fromTo('.image1front', { y: 0 }, { y: 50 })
 .fromTo('.image2front', { y: 0 }, { y: 50 })
-.fromTo('.image3front', { y: 150 }, { y: 0 })
+.fromTo('.image3front', { y: 0 }, { y: 50 })
 .fromTo('.image4front', { y: 150 }, { y: 0 })

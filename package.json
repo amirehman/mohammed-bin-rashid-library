@@ -1,0 +1,7 @@
+{
+    "repository": "#",
+    "license": "UNLICENSED",
+    "scripts": {
+      "deploy": "vercel --prod"
+    }
+  }

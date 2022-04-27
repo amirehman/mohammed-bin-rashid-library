@@ -1,12 +1,20 @@
 let isRegisterForm = false
 let plan = null
 
+showPlans()
+
 function choosePlan (plan) {
     isRegisterForm = true
     plan = plan
 
-    $('.choose-plan').addClass('hidden')
-    $('.registratin-form').removeClass('hidden')
+    hidePlans()
+
+    setTimeout(function(){
+        $('.choose-plan').addClass('hidden')
+        $('.registratin-form').removeClass('hidden')
+        showRegisterationForm()
+    }, 200);
+
 
 }
 
@@ -38,10 +46,81 @@ gsap.fromTo(".nav-link",
     },
   );
 
+function showPlans () {
 
-// ScrollReveal({ reset: true }).reveal('.obj1', { scale: 0.97, distance: '10px', easing: 'ease-in-out' });
-// ScrollReveal({ reset: true }).reveal('.obj2', { scale: 0.97, delay: 200, distance: '10px', easing: 'ease-in-out' });
-// ScrollReveal({ reset: true }).reveal('.obj3', { scale: 0.97, delay: 400, distance: '10px', easing: 'ease-in-out' });
+    gsap.fromTo(".plan-1",
+        0.5,
+        {
+            opacity: 0,
+            x: 30,
+        },
+        {
+            opacity: 1,
+            x: 0,
+        },
+    );
+
+    gsap.fromTo(".plan-2",
+        0.5,
+        {
+            opacity: 0,
+            x: -30,
+        },
+        {
+            opacity: 1,
+            x: 0,
+        },
+    );
+
+}
+
+function hidePlans () {
+
+    gsap.fromTo(".plan-1",
+        0.3,
+        {
+            opacity: 1,
+            x: 0,
+        },
+        {
+            opacity: 0,
+            x: 30,
+        },
+    );
+
+    gsap.fromTo(".plan-2",
+        0.3,
+        {
+            opacity: 1,
+            x: 0,
+        },
+        {
+            opacity: 0,
+            x: -30,
+        },
+    );
+
+}
+
+
+function showRegisterationForm () {
+
+    gsap.fromTo(".registratin-form",
+        0.2,
+        {
+            opacity: 0,
+            scale: 0.50,
+        },
+        {
+            opacity: 1,
+            scale: 1
+        },
+    );
+
+}
+
+
+
 
 
 

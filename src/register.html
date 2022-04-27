@@ -7,7 +7,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <link href="/dist/output.css" rel="stylesheet">
+    <link href="../dist/output.css" rel="stylesheet">
 
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
@@ -59,11 +59,12 @@
             <div class="w-3/4 mx-auto mb-36">
 
                 <div class="choose-plan mt-64 flex items-center justify-between ">
-                    <div onclick="choosePlan('single')" class="plan w-full h-72 bg-theme-orange text-center py-5 text-white relative">
+
+                    <div onclick="choosePlan('single')" class="opacity-0 plan plan-1 w-full h-72 bg-theme-orange text-center py-5 text-white relative">
                         <div class="img">
                             <img src="./images/person.svg" alt="person icon" class="w-1/2 mx-auto">
                         </div>
-                        <div class="text-base my-3"> باقة فردية  </div>
+                        <div class="text-base my-3"> باقة فردية </div>
                         <div class="text-2xl">150 دإ</div>
 
 
@@ -76,7 +77,7 @@
 
                     <div class="w-10"></div>
 
-                    <div onclick="choosePlan('family')" class="plan w-full h-72 bg-theme-orange text-center py-5 text-white relative">
+                    <div onclick="choosePlan('family')" class="opacity-0 plan plan-2 w-full h-72 bg-theme-orange text-center py-5 text-white relative">
                         <div class="img">
                             <img src="./images/family.svg" alt="family icon" class="w-2/3 mx-auto">
                         </div>
@@ -96,7 +97,7 @@
                 </div>
                 <!-- choose plan -->
 
-                <div class="registratin-form mt-40 hidden">
+                <div class="registratin-form mt-40 opacity-0 hidden">
 
                     <h1 class="text-theme-orange">لقد قمت باختيار الباقة العائلية</h1>
 
