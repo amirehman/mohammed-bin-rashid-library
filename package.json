@@ -1,7 +1,10 @@
 {
-    "repository": "#",
-    "license": "UNLICENSED",
-    "scripts": {
-      "deploy": "vercel --prod"
-    }
+  "repository": "#",
+  "license": "UNLICENSED",
+  "scripts": {
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "vercel": "^24.2.4"
   }
+}

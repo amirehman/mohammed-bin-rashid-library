@@ -1,3 +1,7 @@
+$navlink1 = $('.nav-link-1');
+$navlink2 = $('.nav-link-2');
+$navlink3 = $('.nav-link-3');
+$navlink4 = $('.nav-link-4');
 
 var count = 0,
 $text1 = $('.text1').drawsvg({
@@ -7,6 +11,12 @@ $text1 = $('.text1').drawsvg({
     }
 }),
 $text2 = $('.text2').drawsvg({
+    duration: 5000,
+    callback: function() {
+        count != 0 ? sectionTwoAnimateEarly() : ''
+    }
+}),
+$text2_1 = $('.text2_1').drawsvg({
     duration: 5000,
     callback: function() {
         count != 0 ? sectionTwoAnimateEarly() : ''
@@ -24,12 +34,7 @@ $text4 = $('.text4').drawsvg({
         count != 0 ? sectionFourAnimateEarly() : ''
     }
 }),
-$text5 = $('.text5').drawsvg({
-    duration: 5000,
-    callback: function() {
-        count != 0 ? sectionFourAnimateDelay() : ''
-    }
-}),
+
 $hamza1 = $('.hamza1').drawsvg({
     duration: 1500,
     callback: function() {
@@ -60,8 +65,12 @@ function sectionOneAnimateDelay() {
     $text1.drawsvg('animate');
 }
 
+
 function sectionTwoAnimateEarly() {
     $text2.drawsvg('animate');
+    setTimeout(() => {
+        $text2_1.drawsvg('animate');
+    }, 500);
 }
 
 function sectionTwoAnimateDelay() {
@@ -70,6 +79,22 @@ function sectionTwoAnimateDelay() {
 
 function sectionThreeAnimateEarly() {
     $text3.drawsvg('animate');
+    gsap.fromTo(".glbox",
+        0.7,
+        {
+            opacity: 0,
+            scale: 0.9,
+            y: 15,
+        },
+        {
+            opacity: 1,
+            scale: 0.97,
+            x: 0,
+            y: 0,
+            stagger: 0.1
+        },
+    );
+
 }
 
 function sectionThreeAnimateDelay() {
@@ -78,7 +103,6 @@ function sectionThreeAnimateDelay() {
 
 function sectionFourAnimateEarly() {
     $text4.drawsvg('animate');
-
     gsap.fromTo(".singleicon",
     0.7,
     {
@@ -101,29 +125,6 @@ function sectionFourAnimateDelay() {
     $hamza4.drawsvg('animate');
 }
 
-
-
-function socialFooterAnimateEarly() {
-    console.log('here')
-    $text5.drawsvg('animate');
-
-    gsap.fromTo(".sociallink",
-    0.7,
-    {
-        opacity: 0,
-        y: 10,
-        x: 10,
-        scale: 0.97, x: 15,
-    },
-    {
-        opacity: 1,
-        y: 0,
-        x: 0,
-        scale: 0.97, x: 0,
-        stagger: 0.2
-    },
-  );
-}
 
 
 ScrollTrigger.create({
@@ -183,14 +184,6 @@ ScrollTrigger.create({
 });
 
 
-ScrollTrigger.create({
-    trigger: ".social-footer",
-    start:'top 70%',
-    end:'bottom end',
-    onEnter: () => socialFooterAnimateEarly(),
-});
-
-
 $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
 
@@ -237,3 +230,59 @@ gsap.timeline({
 .fromTo('.image2front', { y: 0 }, { y: 50 })
 .fromTo('.image3front', { y: 0 }, { y: 50 })
 .fromTo('.image4front', { y: 150 }, { y: 0 })
+
+
+
+$(document).on('scroll', function() {
+    if ($(this).scrollTop() >= $('.section-one').position().top) {
+
+        $navlink1.addClass('nav-link-1-active');
+        $navlink2.removeClass('nav-link-2-active');
+        $navlink3.removeClass('nav-link-3-active');
+        $navlink4.removeClass('nav-link-4-active');
+
+    } else {
+
+        $navlink1.removeClass('nav-link-1-active');
+
+    }
+    if ($(this).scrollTop() >= $('.section-two').position().top - 150) {
+
+        $navlink1.removeClass('nav-link-1-active');
+        $navlink2.addClass('nav-link-2-active');
+        $navlink3.removeClass('nav-link-3-active');
+        $navlink4.removeClass('nav-link-4-active');
+
+    } else {
+
+        $navlink2.removeClass('nav-link-2-active');
+
+    }
+
+    if ($(this).scrollTop() >= $('.section-three').position().top - 150) {
+
+        $navlink1.removeClass('nav-link-1-active');
+        $navlink2.removeClass('nav-link-2-active');
+        $navlink3.addClass('nav-link-3-active');
+        $navlink4.removeClass('nav-link-4-active');
+
+    } else {
+
+        $navlink1.removeClass('nav-link-3-active');
+
+    }
+
+    if ($(this).scrollTop() >= $('.section-four').position().top + 180) {
+
+        $navlink1.removeClass('nav-link-1-active');
+        $navlink2.removeClass('nav-link-2-active');
+        $navlink3.removeClass('nav-link-3-active');
+        $navlink4.addClass('nav-link-4-active');
+
+    } else {
+
+        $navlink1.removeClass('nav-link-4-active');
+
+    }
+
+  })
