@@ -1,4 +1,4 @@
-let text2Wrapper = "Is To Become a Lighthouse Of Knowledge, Culture And Creativity";
+let text2Wrapper = "To become a lighthouse of knowledge, culture and creativity.";
 let res2 = text2Wrapper.split(" ");
 
 

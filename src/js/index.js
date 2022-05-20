@@ -60,6 +60,23 @@ function bigHamzaAnimation() {
  function socialFooterAnimateEarly() {
     $text5.drawsvg('animate');
 
+    gsap.fromTo(".animtedtext1",
+        0.6,
+        {
+            opacity: 0,
+            scale: 0.6,
+            x: -15,
+            y: 10,
+        },
+        {
+            opacity: 1,
+            scale: 1,
+            x: 0,
+            y: 0,
+            stagger: 0.05
+        },
+    );
+
     gsap.fromTo(".sociallink",
     0.7,
     {
@@ -76,4 +93,5 @@ function bigHamzaAnimation() {
         stagger: 0.2
     },
   );
+
 }
