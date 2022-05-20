@@ -2,6 +2,9 @@ module.exports = {
   mode: 'jit',
   content: ["./src/**/*.{html,js}"],
   theme: {
+    screens: {
+      'se': '380px',
+    },
     extend: {
       colors: {
         'theme-orange': '#e24e16',

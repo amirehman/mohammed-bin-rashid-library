@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.0.23 | MIT License | https://tailwindcss.com
+! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -476,53 +476,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100% !important;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 380px) {
   .container {
-    max-width: 640px;
+    max-width: 380px;
   }
 
   .\!container {
-    max-width: 640px !important;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-
-  .\!container {
-    max-width: 768px !important;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-
-  .\!container {
-    max-width: 1024px !important;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-
-  .\!container {
-    max-width: 1280px !important;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-
-  .\!container {
-    max-width: 1536px !important;
+    max-width: 380px !important;
   }
 }
 
@@ -639,8 +599,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   top: -110px;
 }
 
+.bottom-\[20\%\] {
+  bottom: 20%;
+}
+
 .right-4 {
   right: 1rem;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.top-16 {
+  top: 4rem;
+}
+
+.-bottom-\[25rem\] {
+  bottom: -25rem;
+}
+
+.-bottom-\[26rem\] {
+  bottom: -26rem;
+}
+
+.-bottom-\[30rem\] {
+  bottom: -30rem;
 }
 
 .z-10 {
@@ -813,6 +797,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-20 {
   height: 5rem;
+}
+
+.h-48 {
+  height: 12rem;
 }
 
 .min-h-screen {
@@ -1034,6 +1022,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 2.5rem;
 }
 
+.px-px {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
 .pt-\[28rem\] {
   padding-top: 28rem;
 }
@@ -1074,12 +1067,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 4rem;
 }
 
+.pt-\[40rem\] {
+  padding-top: 40rem;
+}
+
+.pt-\[36rem\] {
+  padding-top: 36rem;
+}
+
 .text-center {
   text-align: center;
 }
 
-.text-\[11px\] {
-  font-size: 11px;
+.text-\[12px\] {
+  font-size: 12px;
 }
 
 .text-\[14px\] {
@@ -1095,10 +1096,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 10px;
 }
 
-.text-\[12px\] {
-  font-size: 12px;
-}
-
 .text-\[9px\] {
   font-size: 9px;
 }
@@ -1106,6 +1103,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-\[11px\] {
+  font-size: 11px;
 }
 
 .text-2xl {
@@ -1390,35 +1391,36 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 640px) {
-  .sm\:top-48 {
+@media (min-width: 380px) {
+  .se\:top-48 {
     top: 12rem;
   }
 
-  .sm\:mt-56 {
-    margin-top: 14rem;
+  .se\:-bottom-\[21rem\] {
+    bottom: -21rem;
   }
 
-  .sm\:h-80 {
+  .se\:-bottom-\[23rem\] {
+    bottom: -23rem;
+  }
+
+  .se\:-bottom-\[25rem\] {
+    bottom: -25rem;
+  }
+
+  .se\:h-80 {
     height: 20rem;
   }
 
-  .sm\:pt-48 {
-    padding-top: 12rem;
+  .se\:pt-\[20rem\] {
+    padding-top: 20rem;
   }
 
-  .sm\:text-\[12px\] {
-    font-size: 12px;
-  }
-}
-
-@media (min-width: 768px) {
-  .md\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
+  .se\:pt-\[32rem\] {
+    padding-top: 32rem;
   }
 
-  .md\:w-\[600px\] {
-    width: 600px;
+  .se\:pt-\[28rem\] {
+    padding-top: 28rem;
   }
 }
